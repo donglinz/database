@@ -1,12 +1,24 @@
 //#include "dbf\dbf.h"
 #include "ql_Manager.h"
 using namespace std;
-#define DEBUG_DBF
+#define DEBUG_SQL
 #include <iostream>
+#include "cparse\shunting-yard.h"
 #ifdef DEBUG_DBF
 
 int main(int argc, char *argv[])
 {
+/*
+	TokenMap vars;
+	calculator calu;
+	calu.compile("(d != 'abcdef')");
+	vars["a"] = 2.33;
+	vars["b"] = 2.34;
+	vars["c"] = "1234";
+	vars["d"] = "4567";
+	std::cout << calu.eval(vars).str() << std::endl;
+	packToken pt;
+	*/
     if( false )
     {
         string sFileReadTest = "TestCreate.dbf";
@@ -119,25 +131,25 @@ int main(int argc, char *argv[])
 
             std::cout << "Done Creating the DBF" << std::endl;
 
-            std::cout << "Open the DBF for reading and writing" << std::endl;
-            // now read the dbf back to test that it worked!
-            DBF readTest;
-            readTest.open("TestCreate.dbf",true);
-            int nRecs = readTest.GetNumRecords();
-            int nFields = readTest.GetNumFields();
-            std::cout << "Open() found " << nRecs << " records, and " << nFields << " fields." << std::endl;
-            readTest.dumpAsCSV();
-            std::cout << "Done Reading a freshly created DBF! " << std::endl;
+            //std::cout << "Open the DBF for reading and writing" << std::endl;
+            //// now read the dbf back to test that it worked!
+            //DBF readTest;
+            //readTest.open("TestCreate.dbf",true);
+            //int nRecs = readTest.GetNumRecords();
+            //int nFields = readTest.GetNumFields();
+            //std::cout << "Open() found " << nRecs << " records, and " << nFields << " fields." << std::endl;
+            //readTest.dumpAsCSV();
+            //std::cout << "Done Reading a freshly created DBF! " << std::endl;
 
-            std::cout << "Test Delete Record 1 in DBF! " << std::endl;
-            std::cout << "Test Delete Record 3 in DBF! " << std::endl;
-            readTest.markAsDeleted(1);
-            readTest.markAsDeleted(3);
-            readTest.dumpAsCSV();
+            //std::cout << "Test Delete Record 1 in DBF! " << std::endl;
+            //std::cout << "Test Delete Record 3 in DBF! " << std::endl;
+            //readTest.markAsDeleted(1);
+            //readTest.markAsDeleted(3);
+            //readTest.dumpAsCSV();
 
-            std::cout << "Done Test Delete Record DBF! " << std::endl;
+            //std::cout << "Done Test Delete Record DBF! " << std::endl;
 
-            readTest.close();
+            //readTest.close();
         }
     }
 	system("pause");
@@ -164,9 +176,6 @@ int main() {
 #endif // DEBUG_SQL
 
 /*
-select distinct a, b, c from sc
-where a>10
-group by a
-order by a, b
-having 1>1;
+select ID, Firstname from
+test where date='2016-10-10';
 */

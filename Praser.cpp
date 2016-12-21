@@ -1,7 +1,9 @@
 #include "Praser.h"
 
-const std::exception Praser::ex_field_error = std::exception("[ERROR] ×Ö¶Î¸ñÊ½´íÎó£¡");
-
+const std::exception Praser::ex_field_error = std::exception("[ERROR] ×Ö¶Î¸ñÊ½´íÎó!");
+const std::regex Praser::re_date = std::regex("[0-9]+-[0-9]+-[0-9]+");
+const std::vector<int> Praser::days{ 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+const std::set<char> Praser::legalOperator{'(', ')', '.', '+', '-', '*', '/', '&', '|', '=', '\''};
 Praser::Praser()
 {
 }
@@ -40,7 +42,7 @@ int Praser::findFirstOf(const std::string & a, const std::string & b)
 	for (int i = 0; i < (int)a.length() - (int)b.length() + 1; ++i) {
 		bool ok = true;
 		for (int j = 0; j < b.length(); j++) {
-			if (a[i + j] != b[j] && a[i + j] != tolower(b[j])) {
+			if (tolower(a[i + j]) != tolower(b[j])) {
 				ok = false;
 				break;
 			}
@@ -59,7 +61,7 @@ std::vector<std::string> Praser::resolveField(std::string fields) throw(std::exc
 		ret[i] = trim(ret[i]);
 		if (ret[i] == "") throw ex_field_error;
 		for (int j = 0; j < ret[i].size(); j++) {
-			if (!isalnum(ret[i][j]) && ret[i][j] != '(' && ret[i][j] != ')') throw ex_field_error;
+			if (!isalnum(ret[i][j]) && !legalOperator.count(ret[i][j])) throw ex_field_error;
 		}
 	}
 	return ret;
@@ -70,16 +72,34 @@ std::vector<std::string> Praser::split(const std::string & a, char ch)
 	std::vector<std::string> ret;
 	std::string t;
 	for (int i = 0; i < a.length(); ++i) {
-		if (a[i] == ',') {
+		if (a[i] == ch) {
 			ret.push_back(trim(t));
 			t = "";
 			continue;
 		}
 		t += a[i];
 	}
+	if (t != "") ret.push_back(t);
 	return ret;
 }
 
 Praser::~Praser()
 {
+}
+
+bool Praser::isLegalDate(std::string date)
+{
+	date = trim(date);
+	if (!std::regex_match(date, re_date)) return false;
+	for (int i = 0; i < date.length(); ++i)
+		if (date[i] == '-') date[i] = ' ';
+	std::stringstream ss(date);
+	int year, day, month;
+	ss >> year;
+	if (year < 0 || year > 9999) return false;
+	ss >> month;
+	if (month < 0 || month > 12) return false;
+	ss >> day;
+	if (day < 0 || day > days[month - 1]) return false;
+	return true;
 }

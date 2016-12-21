@@ -8,15 +8,17 @@ ql_select::ql_select(string q_line) : m_sSelect(q_line)
 
 void ql_select::run()
 {
-	Table ret = run_select(m_sSelect);
+	Table ret;
+	run_select(m_sSelect, ret);
 	ret.prettyPrint();
 }
 
 ql_select::~ql_select()
 {
+	
 }
 
-Table ql_select::run_select(string q_line)
+int ql_select::run_select(string q_line, Table& ret)
 {
 	q_line = Praser::trim(q_line);
 
@@ -25,12 +27,12 @@ Table ql_select::run_select(string q_line)
 	}
 
 	// 字段
-	std::vector<string> *m_fields = new std::vector<string>;
-	std::vector<string> *m_from = new std::vector<string>;
-	std::vector<string> *m_where = new std::vector<string>;
-	std::vector<string> *m_group_by = new std::vector<string>;
-	std::vector<string> *m_order_by = new std::vector<string>;
-	std::vector<string> *m_having = new std::vector<string>;
+	std::shared_ptr<std::vector<string> >m_fields(new std::vector<string>());
+	std::shared_ptr<std::vector<string> >m_from(new std::vector<string>());
+	std::shared_ptr<std::vector<string> >m_where(new std::vector<string>());
+	std::shared_ptr<std::vector<string> >m_group_by(new std::vector<string>());
+	std::shared_ptr<std::vector<string> >m_order_by(new std::vector<string>());
+	std::shared_ptr<std::vector<string> >m_having(new std::vector<string>());
 
 	bool m_distinct = false;
 
@@ -72,14 +74,10 @@ Table ql_select::run_select(string q_line)
 			(*positions[cnt].posPtr) = Praser::resolveField((*positions[cnt].posPtr)[0]);
 		}
 		catch (std::exception e) {
-			for (int i = 0; i <= 5; ++i) delete positions[i].posPtr;
 			std::cerr << e.what() << " " << (*positions[cnt].posPtr)[0] << "附近有语法错误!" << std::endl;
-			return Table();
+			return 1;
 		}
 	}
-	
-	Table ret;
-
 	if (m_from->size() > 1) {
 		string ne_sql;
 		for (int i = 0; i < m_from->size(); ++i) ne_sql += (*m_from)[i];
@@ -87,37 +85,52 @@ Table ql_select::run_select(string q_line)
 			std::cerr << "[ERROR] ";
 			std::cerr << ne_sql;
 			std::cerr << " 附近有语法错误" << std::endl;
-			for (int i = 0; i <= 5; ++i) delete positions[i].posPtr;
-			return Table();
+			return 1;
 		}
 		
-		ret = run_select(ne_sql);
+		// 递归嵌套查询
+		if(run_select(ne_sql, ret) != 0) return 1;
 	}
 	else {
+		// 没有递归嵌套查询
 		FILE *tfp;
-		if ((tfp = fopen((*m_from)[0].c_str(), "rb")) == NULL) {
+		if ((tfp = fopen(((*m_from)[0] + ".dbf").c_str(), "rb")) == NULL) {
 			std::cerr << (*m_from)[0] << " " << ex_do_not_have_table.what() << std::endl;
-			for (int i = 0; i <= 5; ++i) delete positions[i].posPtr;
-			return Table();
+			return 1;
 		}
-		ret.open((*m_from)[0]);
+		ret.open((*m_from)[0] + ".dbf");
 	}
-	 
-	 
-	 return get_select(ret, m_fields, m_where, m_group_by, m_order_by, m_having);
-	 
+	ret.close();
+
+	if(get_select(ret, m_fields, m_where, m_group_by, m_order_by, m_having) != 0) return 1;
+	
+	return 0;
 }
 
-Table ql_select::get_select(
-	Table m_table, 
-	std::vector<string>* m_fields,
-	std::vector<string>* m_where,
-	std::vector<string>* m_group_by,
-	std::vector<string>* m_order_by,
-	std::vector<string>* m_having
+
+int ql_select::get_select(
+	Table & m_table, 
+	std::shared_ptr<std::vector<string> > m_fields,
+	std::shared_ptr<std::vector<string> > m_where,
+	std::shared_ptr<std::vector<string> > m_group_by,
+	std::shared_ptr<std::vector<string> > m_order_by,
+	std::shared_ptr<std::vector<string> > m_having
 )
 {
-	
-	// 一定要返回一个close以后的table
-	return Table();
+	if (runWhere(m_table, (*m_where)[0]) != 0) {
+		std::cerr << "[ERROR] WHERE 参数有误!" << std::endl;
+	}
+	return 0;
+}
+
+int ql_select::runWhere(Table & m_table, string s_condition)
+{
+	for (int nRec = m_table.numRecord() - 1; nRec >= 0 ; --nRec) {
+		bool match;
+		m_table.isMatch(nRec, s_condition, match);
+		if (match == false) {
+			m_table.deleteRecord(nRec);
+		}
+	}
+	return 0;
 }

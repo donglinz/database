@@ -97,6 +97,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="cparse\builtin-features.cpp" />
+    <ClCompile Include="cparse\catch.cpp" />
+    <ClCompile Include="cparse\functions.cpp" />
+    <ClCompile Include="cparse\objects.cpp" />
+    <ClCompile Include="cparse\packToken.cpp" />
+    <ClCompile Include="cparse\shunting-yard.cpp" />
+    <ClCompile Include="cparse\test-shunting-yard.cpp" />
     <ClCompile Include="dbf\dbf.cpp" />
     <ClCompile Include="dbf\DBFBase.cpp" />
     <ClCompile Include="main.cpp" />
@@ -106,6 +113,13 @@
     <ClCompile Include="Table.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="cparse\catch.hpp" />
+    <ClInclude Include="cparse\functions.h" />
+    <ClInclude Include="cparse\objects.h" />
+    <ClInclude Include="cparse\pack.h" />
+    <ClInclude Include="cparse\packToken.h" />
+    <ClInclude Include="cparse\shunting-yard-exceptions.h" />
+    <ClInclude Include="cparse\shunting-yard.h" />
     <ClInclude Include="dbf\dbf.h" />
     <ClInclude Include="dbf\DBFBase.h" />
     <ClInclude Include="Praser.h" />

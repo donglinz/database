@@ -26,22 +26,25 @@ private:
 	struct FieldsPosition {
 		int pos;
 		string name;
-		std::vector<string> * posPtr;
+		std::shared_ptr<std::vector<string> > posPtr;
 		bool operator < (const FieldsPosition& rhs) const {
 			return pos < rhs.pos;
 		}
 	};
 
 	//std::shared_ptr<BaseTable> selectTable;
-	Table run_select(string q_line);
+	int run_select(string q_line, Table& ret);
 
-	Table get_select(
-		Table m_table, 
-		std::vector<string>* m_fields, 
-		std::vector<string>* m_where,
-		std::vector<string>* m_group_by, 
-		std::vector<string>* m_order_by, 
-		std::vector<string>* m_having);
+	int get_select(
+		Table & m_table, 
+		std::shared_ptr<std::vector<string> > m_fields, 
+		std::shared_ptr<std::vector<string> > m_where,
+		std::shared_ptr<std::vector<string> > m_group_by,
+		std::shared_ptr<std::vector<string> > m_order_by, 
+		std::shared_ptr<std::vector<string> > m_having
+	);
 
+	int runWhere(Table& m_table, string s_condition);
+	
 };
 

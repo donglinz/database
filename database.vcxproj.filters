@@ -36,6 +36,27 @@
     <ClCompile Include="Praser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="cparse\builtin-features.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cparse\catch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cparse\functions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cparse\objects.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cparse\packToken.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cparse\shunting-yard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cparse\test-shunting-yard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="dbf\dbf.h">
@@ -54,6 +75,27 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Praser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cparse\catch.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cparse\functions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cparse\objects.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cparse\pack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cparse\packToken.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cparse\shunting-yard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cparse\shunting-yard-exceptions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

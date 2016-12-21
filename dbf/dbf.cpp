@@ -592,7 +592,7 @@ int DBF::assignField(fieldDefinition fd,int nField)
     m_FileHeader.uRecordLength = 1; // 1 byte for delete flag
     for( int i=0;i<= nField ;i++ )
         m_FileHeader.uRecordLength += m_FieldDefinitions[i].uLength;
-	while (m_pRecord.size() - 10 < m_FileHeader.uRecordLength) m_pRecord.push_back(0);
+	while (m_pRecord.size() < m_FileHeader.uRecordLength + 10) m_pRecord.push_back(0);
     updateFileHeader();
 
     return 0;
