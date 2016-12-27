@@ -57,6 +57,18 @@
     <ClCompile Include="cparse\test-shunting-yard.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ql_create.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ql_insert.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ql_update.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ql_delete.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="dbf\dbf.h">
@@ -96,6 +108,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="cparse\shunting-yard-exceptions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ql_create.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ql_insert.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ql_update.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ql_delete.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,6 +1,11 @@
 #pragma once
 #include <exception>
 #include "ql_select.h"
+#include "ql_create.h"
+#include "ql_insert.h"
+#include "ql_update.h"
+#include "ql_delete.h"
+
 class ql_Manager
 {
 public:

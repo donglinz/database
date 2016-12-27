@@ -8,6 +8,7 @@ ql_Manager::ql_Manager()
 
 void ql_Manager::run(string q_line)
 {
+	q_line = Praser::toLowerString(q_line);
 	try {
 		getStanderString(q_line);
 	}
@@ -20,6 +21,8 @@ void ql_Manager::run(string q_line)
 		qsl.run();
 	}
 	else if (Praser::toLowerString(q_line.substr(0, 6)) == "create") {
+		ql_create qsl(q_line);
+		qsl.run();
 	}
 	else if (Praser::toLowerString(q_line.substr(0, 6)) == "insert") {
 	}

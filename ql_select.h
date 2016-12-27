@@ -4,6 +4,7 @@
 
 #include "Table.h"
 #include "Praser.h"
+
 class ql_select
 {
 public:
@@ -20,8 +21,24 @@ private:
 	const string group_by = "group by";
 	const string order_by = "order by";
 	const string having = "having";
-	std::exception ex_do_not_have_table = std::exception("表不存在!");
 
+	const string count = "count(";
+	const string max = "max(";
+	const string min = "min(";
+	const string ave = "ave(";
+	const string sum = "sum(";
+
+	enum AggregateFunc {
+		None,
+		Count,
+		Max,
+		Min,
+		Ave,
+		Sum
+	};
+
+	std::exception ex_do_not_have_table = std::exception("表不存在!");
+	bool isdistinct = false;
 
 	struct FieldsPosition {
 		int pos;
@@ -45,6 +62,9 @@ private:
 	);
 
 	int runWhere(Table& m_table, string s_condition);
-	
+	int runGroupBy(Table& m_table, string s_condition, std::vector<string> v_fields);
+	int runOrderBy(Table& m_table, std::vector<string> v_condition);
+	int runFrom(Table& m_table, std::vector<string> v_fields);
+	int runHaving(Table& m_table, std::string s_condition);
 };
 

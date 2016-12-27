@@ -86,13 +86,13 @@ int main(int argc, char *argv[])
             string s2[6]={"1000" ,"Paul F","196.2","33","T", "2016-10-10" };
             newdbf.appendRecord(s2,6);
 
-            string s3[6]={"20000" ,"Dean K","186.1","23","F", "2016-10-10" };
+            string s3[6]={"20000" ,"Dean K","186.1","23","F", "2016-10-11" };
             newdbf.appendRecord(s3,6);
 
-            string s4[6]={"300000" ,"Gary\" Q","175.123456789","13","F", "2016-10-10" };
+            string s4[6]={"300000" ,"Gary\" Q","175.123456789","13","F", "2016-10-11" };
             newdbf.appendRecord(s4,6);
 
-            string s5[6]={"2000000" ,"Dan'e \"D, with comma and over sized field that will be truncated","65.2","6","F", "2016-10-10" };
+            string s5[6]={"2000000" ,"Dan'e \"D, with comma and over sized field that will be truncated","65.2","6","F", "2016-10-12" };
             newdbf.appendRecord(s5,6);
 
             // now add a huge pile of random records to see if it crashes
@@ -160,6 +160,17 @@ int main(int argc, char *argv[])
 
 #ifdef DEBUG_SQL
 int main() {
+	//DBF db;
+	//db.open("test.dbf");
+	//db.loadRec(0);
+	//for (int i = 0; i < db.GetNumFields(); ++i) std::cout << db.readField(i) << std::endl;
+	//calculator c1; TokenMap vars;
+	//vars["id"] = 1;
+	//vars["firstname"] = "Ric G";
+	//vars["weight"] = 210.1234;
+	//vars["married"] = ""
+	//c1.compile("date==20161010");
+	//std::cout << c1.eval(vars);
 	ql_Manager qm;
 	string sql = "";
 	while (true) {
@@ -169,13 +180,34 @@ int main() {
 		int ret = sql.find(';');
 		if (ret != string::npos) {
 			qm.run(sql.substr(0, ret + 1));
-			sql = sql.substr(ret + 1, 10000);
+			sql = "";
 		}
 	}
 }
 #endif // DEBUG_SQL
-
+/*
+select * from test;
 /*
 select ID, Firstname from
-test where date='2016-10-10';
+test where date=='2016-10-10';
+
+select ID, Firstname from
+test where date=='2016-10-11';
+
+select ID, Firstname from
+(select ID, Firstname from
+test where date=='2016-10-10') where id==1;
+*/
+
+/*
+select count(id), married from test group by married;
+select max(age), married from test group by married;
+select max(age) from test;
+*/
+
+/*
+select max(age), date from test group by date order by date;
+select max(age), date from test group by date order by date desc;
+select max(age), date from test group by date having max(age)>10;
+select max(age), date from test group by date having max(age)>10 order by age;
 */

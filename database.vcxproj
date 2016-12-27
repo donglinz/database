@@ -108,8 +108,12 @@
     <ClCompile Include="dbf\DBFBase.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Praser.cpp" />
+    <ClCompile Include="ql_create.cpp" />
+    <ClCompile Include="ql_delete.cpp" />
+    <ClCompile Include="ql_insert.cpp" />
     <ClCompile Include="ql_Manager.cpp" />
     <ClCompile Include="ql_select.cpp" />
+    <ClCompile Include="ql_update.cpp" />
     <ClCompile Include="Table.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -123,8 +127,12 @@
     <ClInclude Include="dbf\dbf.h" />
     <ClInclude Include="dbf\DBFBase.h" />
     <ClInclude Include="Praser.h" />
+    <ClInclude Include="ql_create.h" />
+    <ClInclude Include="ql_delete.h" />
+    <ClInclude Include="ql_insert.h" />
     <ClInclude Include="ql_Manager.h" />
     <ClInclude Include="ql_select.h" />
+    <ClInclude Include="ql_update.h" />
     <ClInclude Include="Table.h" />
   </ItemGroup>
   <ItemGroup>

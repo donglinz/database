@@ -54,3 +54,5 @@ fieldDefinition TypeInteger();
 
 // L
 fieldDefinition TypeBoolean();
+
+fieldDefinition getType(char ch);

@@ -26,6 +26,8 @@
 #include <algorithm>
 #include <vector>
 #include "DBFBase.h"
+#include "../Praser.h"
+
 #include <io.h>
 
 

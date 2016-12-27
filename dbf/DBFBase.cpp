@@ -44,3 +44,13 @@ fieldDefinition TypeBoolean()
 	fd.uLength = 1;
 	return fd;
 }
+
+fieldDefinition getType(char ch)
+{
+	if (ch == 'C')	return TypeString();
+	else if (ch == 'D') return TypeDate();
+	else if (ch == 'F') return TypeDouble();
+	else if (ch == 'I' || ch == 'N') return TypeInteger();
+	else if (ch == 'L') return TypeBoolean();
+	return TypeString();
+}
