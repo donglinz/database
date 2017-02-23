@@ -119,6 +119,16 @@ int Table::fieldPos(const string & field)
 	return -1;
 }
 
+void Table::setRecord(int nRec, string key, string val)
+{
+	if (val[0] == '\'') {
+		val = val.substr(1, val.length() - 2);
+	}
+	std::vector<string> rec = (*m_Records[nRec]);
+	rec[fieldPos(key)] = val;
+	m_dbfFile.rewriteRecord(&rec[0], numFields(), nRec);
+}
+
 int Table::convertStringToInt(string arg)
 {
 	return Praser::convertStringToInt(arg);

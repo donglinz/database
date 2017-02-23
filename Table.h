@@ -27,7 +27,7 @@ public:
 	void deleteRecord(int nRec);
 	int sort(std::vector<string> v_coindition);
 	int fieldPos(const string& field);
-
+	void setRecord(int nRec, string key, string val);
 	// 用于支持聚合函数
 	int countMax(int nField, int r1, int r2, double & ans);
 	int countMin(int nField, int r1, int r2, double & ans);

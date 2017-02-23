@@ -47,6 +47,7 @@ public:
     int markAsDeleted(int nRecord); // mark this record as deleted
     int create(string sFileName,int nNumFields); // create a new dbf file with space for nNumFields
     int assignField(fieldDefinition myFieldDef,int nField); // used to assign the field info ONLY if num records in file = 0 !!!
+	int rewriteRecord(string * sValues, int nNumValues, int recPos);
     int appendRecord(string *sValues, int nNumValues); // used to append records to the end of the dbf file
 	void dumpAsCSV(); // output fields and records as csv to std output
 	string readField(int nField); // read the request field as a string always from the loaded record!

@@ -47,8 +47,9 @@ int ql_select::run_select(string q_line, Table& ret)
 	int fpos;
 	int p_cnt = 0;
 	bool hasq = false;
+	int poswhere = Praser::findFirstOf(q_line, where);
 	for (int i = 0; i < q_line.length(); ++i) {
-		if (q_line[i] == '(') {
+		if (q_line[i] == '(' && i < poswhere) {
 			hasq = true;
 			++p_cnt;
 		}

@@ -18,6 +18,7 @@ public:
 	static int findFirstOf(const std::string & a, const std::string & b, int bpos = 0);
 	static std::vector<std::string> resolveField(std::string fields);
 	static std::vector<std::string> split(const std::string & a, char ch);
+	static std::vector<std::string> split(const std::string & a, std::set<char> se);
 	
 	static bool isLegalDate(std::string date);
 	static std::string noQuotationMarks(const std::string & t);
@@ -27,6 +28,7 @@ public:
 	static int convertDateToInt(std::string arg);
 
 	static std::string convertNumberToString(double arg, bool removeBackDot = false);
+
 private:
 	const static std::exception ex_field_error;
 	const static std::regex re_date;

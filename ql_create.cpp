@@ -15,17 +15,18 @@ void ql_create::run()
 {
 	q_line = Praser::toLowerString(q_line);
 	fileName = Praser::split(q_line, ' ')[2];
-	int p1, p2;
+	int p1 = -1, p2 = -1;
 	for (int i = 0; i < q_line.length(); ++i) {
 		if (q_line[i] == '(') {
 			p1 = i;
-		}
-		if (q_line[i] == ')') {
-			p2 = i;
+			break;
 		}
 	}
 
-	q_line = q_line.substr(p1 + 1, p2 - p1 - 1);
+	
+
+	q_line = q_line.substr(p1 + 1, q_line.length());
+	q_line.pop_back();
 	std::vector<string> fields = Praser::split(q_line, ',');
 	for (string & tmp : fields) {
 		tmp = Praser::trim(tmp);

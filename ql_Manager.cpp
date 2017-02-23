@@ -25,10 +25,15 @@ void ql_Manager::run(string q_line)
 		qsl.run();
 	}
 	else if (Praser::toLowerString(q_line.substr(0, 6)) == "insert") {
+		ql_insert qsl(q_line);
+		qsl.run();
 	}
 	else if (Praser::toLowerString(q_line.substr(0, 6)) == "update") {
+		ql_update qsl(q_line);
+		qsl.run();
 	}
 	else if (Praser::toLowerString(q_line.substr(0, 6)) == "delete") {
+
 	}
 	else {
 		std::cerr << q_line.substr(0, 6) << "¸½½üÓÐÓï·¨´íÎó" << std::endl;

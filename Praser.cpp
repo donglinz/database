@@ -3,7 +3,7 @@
 const std::exception Praser::ex_field_error = std::exception("[ERROR] ×Ö¶Î¸ñÊ½´íÎó!");
 const std::regex Praser::re_date = std::regex("[0-9]+-[0-9]+-[0-9]+");
 const std::vector<int> Praser::days{ 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
-const std::set<char> Praser::legalOperator{' ', '(', ')', '.', '+', '-', '*', '/', '&', '|', '=', '\'', '>', '<', '!'};
+const std::set<char> Praser::legalOperator{' ', '(', ')', '.', '+', '-', '*', '/', '&', '|', '=', '\'', '>', '<', '!', '_'};
 Praser::Praser()
 {
 }
@@ -77,6 +77,23 @@ std::vector<std::string> Praser::split(const std::string & a, char ch)
 	for (int i = 0; i < a.length(); ++i) {
 		if (a[i] == ch) {
 			ret.push_back(trim(t));
+			t = "";
+			continue;
+		}
+		t += a[i];
+	}
+	if (t != "") ret.push_back(t);
+	return ret;
+}
+
+std::vector<std::string> Praser::split(const std::string & a, std::set<char> se)
+{
+	std::vector<std::string> ret;
+	std::string t;
+	for (int i = 0; i < a.length(); ++i) {
+		if (se.count(a[i])) {
+			if(trim(t) != "")
+				ret.push_back(trim(t));
 			t = "";
 			continue;
 		}

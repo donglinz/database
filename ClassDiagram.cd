@@ -1,2 +1,1862 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram /> 
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SectionTracker" Collapsed="true">
+    <Position X="52.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IndexTracker" Collapsed="true">
+    <Position X="54.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAACAAAAAIEAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Function" Collapsed="true">
+    <Position X="3.25" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAEIAAAAAAAAAAAIAAAAEAAAAAAAQEAAAAAA=</HashCode>
+      <FileName>cparse\functions.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CppFunction" Collapsed="true">
+    <Position X="3.25" Y="17.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAIAAAAAAAAAAAAAAAAAAAAAAEAAUAAAAQEAAAAQA=</HashCode>
+      <FileName>cparse\functions.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TokenList" Collapsed="true">
+    <Position X="8.5" Y="17.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAoAAAQAAAAABAAAAAIAAAAEAAAAAAAAIEgAAAAA=</HashCode>
+      <FileName>cparse\objects.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tuple" Collapsed="true">
+    <Position X="8.5" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>cparse\objects.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="STuple" Collapsed="true">
+    <Position X="8.5" Y="20.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>cparse\objects.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="pack&lt;T&gt;" Collapsed="true">
+    <Position X="0.5" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAJAAAAACAAABAIEAgAAAAAAAAAAAIAxAAAAAAA=</HashCode>
+      <FileName>cparse\pack.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="packToken" Collapsed="true">
+    <Position X="69.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EIFACAAAAAAAAAABAAAIB0AAAAEAECAAAAAgQA0AhAA=</HashCode>
+      <FileName>cparse\packToken.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="msg_exception" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAgAAAAAAAAAAAAAAAAAAAgQAAAAAAAA=</HashCode>
+      <FileName>cparse\shunting-yard-exceptions.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Token&lt;T&gt;" Collapsed="true">
+    <Position X="7.75" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAABAAA=</HashCode>
+      <FileName>cparse\shunting-yard.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OppMap_t" Collapsed="true">
+    <Position X="67.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAUAAAAAAAAAAAQAAAAACAQA=</HashCode>
+      <FileName>cparse\shunting-yard.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Operation" Collapsed="true">
+    <Position X="66" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAgAAAAAQAAAEAAAAAAAAAAAAAAAEQAAAAgAA=</HashCode>
+      <FileName>cparse\shunting-yard.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="calculator" Collapsed="true">
+    <Position X="20.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgQAAAAAAEAgIAEAAAYAAIAAQDACAAAAAgACAAACA=</HashCode>
+      <FileName>cparse\shunting-yard.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DBF" Collapsed="true">
+    <Position X="77" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACFAAQBABAAkEAAAICCAAIAASQIACABgAIBgRBIEKBQ=</HashCode>
+      <FileName>dbf\dbf.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Praser" Collapsed="true">
+    <Position X="79" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACIABBAJAAAABIAAgAAgIBBIBAAAAAABAEAAAAA=</HashCode>
+      <FileName>Praser.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ql_create" Collapsed="true">
+    <Position X="75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAggAAgAAAAEAAAAAAAAAhAIAAQAAEAEAAAAAAAAA=</HashCode>
+      <FileName>ql_create.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ql_delete" Collapsed="true">
+    <Position X="66.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ql_delete.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ql_insert" Collapsed="true">
+    <Position X="75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAgAAAAAAAAAAIAAAAAAAAIAAACAAQEAAAAAAAAA=</HashCode>
+      <FileName>ql_insert.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ql_Manager">
+    <Position X="74.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAACBAAAAAAgAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>ql_Manager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ql_select" Collapsed="true">
+    <Position X="74.75" Y="2.25" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="ql_select::AggregateFunc" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ql_select.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="ql_select::FieldsPosition" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ql_select.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAQSFgIIACIQAAAEBAQAgQAAAAQAYABAAAgIAAAEAiA=</HashCode>
+      <FileName>ql_select.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ql_update">
+    <Position X="74.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAgAAAAAAAAAAAAAAASAAAIAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>ql_update.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Table" Collapsed="true">
+    <Position X="78.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AGCAAIYABgAAAAATICAgSAAAMAAIDAEAAIAAAASEDCU=</HashCode>
+      <FileName>Table.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::NonCopyable" Collapsed="true">
+    <Position X="7.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::SafeBool" Collapsed="true">
+    <Position X="73" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::NotImplementedException" Collapsed="true">
+    <Position X="64.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAIAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::Ptr&lt;T&gt;" Collapsed="true">
+    <Position X="57.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAQAAAAQgAAQAAAAAAAAQAgAAAABAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::TestCase" Collapsed="true">
+    <Position X="14.5" Y="21.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAACAAAAQABAAAAEAAIAQAgAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::TestSpec" Collapsed="true">
+    <Position X="62.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::MethodTestCase&lt;C&gt;" Collapsed="true">
+    <Position X="30" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAACIAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::AssertionResult" Collapsed="true">
+    <Position X="59" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAggAAAgAAAAIAAChABAEAAAAABAAAEAIgAAAgFAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::ExpressionLhs&lt;T&gt;" Collapsed="true">
+    <Position X="57.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAABAACAQAACAAAAJAAAAAoAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::ResultBuilder" Collapsed="true">
+    <Position X="71.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAQBAAAgAoICBKCCAQAAAAgEgIEAJIACAAAAwAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::ScopedMessage" Collapsed="true">
+    <Position X="57.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAACAAAAAAAAAAABAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::Timer" Collapsed="true">
+    <Position X="69.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAEAAAQAAAAAAAAIAAAgAEAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::Section" Collapsed="true">
+    <Position X="1" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAICIAABgQ=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::BetweenGenerator&lt;T&gt;" Collapsed="true">
+    <Position X="15.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAIAAAAAAAAAAAIAgAAAAQAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::ValuesGenerator&lt;T&gt;" Collapsed="true">
+    <Position X="17.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAIAAACAgAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::CompositeGenerator&lt;T&gt;" Collapsed="true">
+    <Position X="64.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAACAAAAAQAEAQIABAAAAAgCAAAACAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::ExceptionTranslatorRegistrar" Collapsed="true">
+    <Position X="73" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::Option&lt;T&gt;" Collapsed="true">
+    <Position X="11.5" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAEAAAAAAEQAAAACoAAAAAgAAAAAAAiAgAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::OcMethod" Collapsed="true">
+    <Position X="45.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAADAAAAACAAAgAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::WildcardPattern" Collapsed="true">
+    <Position X="73" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAQAAAAAAAAQAAAAgAAAAEAAAAAAgBAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::TestSpecParser" Collapsed="true">
+    <Position X="64.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIABAgCAAEAAAgAQAAAAAAAQIAQAAAAgEAgQAAAAIAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::StreamBufBase" Collapsed="true">
+    <Position X="17.5" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::FileStream" Collapsed="true">
+    <Position X="59" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::CoutStream" Collapsed="true">
+    <Position X="66" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::DebugOutStream" Collapsed="true">
+    <Position X="69.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::Config" Collapsed="true">
+    <Position X="43.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABBAIAEggMAAAEAAIAAACAQCgQMQgAASEBiACAEgAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::MultipleReporters" Collapsed="true">
+    <Position X="27.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAACAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::StreamRedirect" Collapsed="true">
+    <Position X="59" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAEAAAAAAAAAAAAAQAAAAAQAAAAAAAAIAAAQAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::RunContext" Collapsed="true">
+    <Position X="10.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BgBmACEAQAAUAAAkIaAQACAgwAoQAEEEMAAgAABAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::Session" Collapsed="true">
+    <Position X="3.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAKAgAGAAAAAQAICAAAgARgAAAAAAAAAAACAAAgAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::TestRegistry" Collapsed="true">
+    <Position X="20.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABACAAAAAAAIQAAIAAAACAIAAAAAAAgAAEAAQAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::FreeFunctionTestCase" Collapsed="true">
+    <Position X="50.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAACAEAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::ReporterRegistry" Collapsed="true">
+    <Position X="0.5" Y="20.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::ExceptionTranslatorRegistry" Collapsed="true">
+    <Position X="18.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAABAAAAAAAAAAAAgAAAAAAAgAAAAAAAAgAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::StreamBufImpl&lt;WriterF, bufferSize&gt;" Collapsed="true">
+    <Position X="17.5" Y="19" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAEAAQAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::Context" Collapsed="true">
+    <Position X="14.5" Y="19" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAACAAgmAhBAAAAABAAAgAAAEAAAAABAkAEAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::GeneratorsForTest" Collapsed="true">
+    <Position X="17.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAABAAAAAAAAAAQAAAEAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::LegacyReporterAdapter" Collapsed="true">
+    <Position X="32.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAgAAAAAEgECAABAABAAEAgAAAAAgAAAAAAAAhSAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::TagAliasRegistry" Collapsed="true">
+    <Position X="15.5" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAABAAQAAAAAAAAAAACAAEAAACAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::LegacyReporterRegistrar&lt;T&gt;" Collapsed="true">
+    <Position X="60.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::ReporterRegistrar&lt;T&gt;" Collapsed="true">
+    <Position X="69.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::ListenerRegistrar&lt;T&gt;" Collapsed="true">
+    <Position X="62.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::XmlEncode" Collapsed="true">
+    <Position X="57.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACBAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::XmlWriter" Collapsed="true">
+    <Position X="59" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEQIAAAAEAAAAiAAABACEIBIAAIEiAAgAAAIAAQ=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::XmlReporter" Collapsed="true">
+    <Position X="34.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::JunitReporter" Collapsed="true">
+    <Position X="48" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAACAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::Matchers::Impl::Generic::Not&lt;ExpressionT&gt;" Collapsed="true">
+    <Position X="3" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::Matchers::AllOf&lt;ExpressionT&gt;" Collapsed="true">
+    <Position X="14.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAQCBAAAAAAAAAAAAAAAAAACAAI=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::Matchers::AnyOf&lt;ExpressionT&gt;" Collapsed="true">
+    <Position X="16.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAQBAAAAAAAAIAAAAAAAAACAAI=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::Internal::Evaluator&lt;T1, T2, Op&gt;" Collapsed="true">
+    <Position X="71.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::Detail::Approx" Collapsed="true">
+    <Position X="57.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAICAAEAAABBACAAQAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="STITCH_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::Text" Collapsed="true">
+    <Position X="67.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAACAAAIAABAAQAAMAACAAAAAACAAAAgA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Clara::Parser" Collapsed="true">
+    <Position X="71.25" Y="1.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Clara::Parser::Mode" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>cparse\catch.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="Clara::Parser::Token" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>cparse\catch.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAgAAIAAAAQAACAAAAAEAgAQgAAAAAAAAAACAQAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Clara::CommandLine&lt;ConfigT&gt;" Collapsed="true">
+    <Position X="62.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAIAAAAAAQAAgCIQAAAAAIAGAAIAAAAAMwAgAIIE=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Clara::Detail::BoundArgFunction&lt;ConfigT&gt;" Collapsed="true">
+    <Position X="60.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAACAAAAAAAAAQAAAACQAAAIAAAAAAgAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CLICHE_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::Text" Collapsed="true">
+    <Position X="66" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAACAAAIAABAAQAAMAACAAAAAACAAAAgA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::TestCaseTracking::TrackerContext" Collapsed="true">
+    <Position X="71.25" Y="3.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Catch::TestCaseTracking::TrackerContext::RunState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>cparse\catch.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AQAAAACBAAAAAAAAABhAAAQAAABAAQAAAAEAQAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::TestCaseTracking::TrackerBase" Collapsed="true">
+    <Position X="53.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAQAAAAAAAgAAEAAAAAIIAIAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::`anonymous-namespace'::RegistryHub" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::`anonymous-namespace'::Win32ColourImpl" Collapsed="true">
+    <Position X="18" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEQQAAAAAAAABAAAAAAACAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Catch::`anonymous-namespace'::PosixColourImpl" Collapsed="true">
+    <Position X="20.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAQBAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="builtin_operations::Startup" Collapsed="true">
+    <Position X="59" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\builtin-features.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="builtin_reservedWords::Startup" Collapsed="true">
+    <Position X="60.75" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\builtin-features.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="builtin_functions::Startup" Collapsed="true">
+    <Position X="62.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\builtin-features.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="builtin_typeSpecificFunctions::Startup" Collapsed="true">
+    <Position X="64.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\builtin-features.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="myCalc" Collapsed="true">
+    <Position X="20.5" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAEAAAAAAAAAQAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>cparse\test-shunting-yard.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="myCalcStartup" Collapsed="true">
+    <Position X="71.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\test-shunting-yard.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="OutputDebugWriter" Collapsed="true">
+    <Position X="57.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="CumulativeReporterBase" Collapsed="true">
+    <Position X="48" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="TestEventListenerBase" Collapsed="true">
+    <Position X="36.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="SummaryColumn" Collapsed="true">
+    <Position X="73" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAABAgAABAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Iterable" Collapsed="true">
+    <Position X="5.5" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>cparse\objects.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Iterator" Collapsed="true">
+    <Position X="5.5" Y="17.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAgIAAAA=</HashCode>
+      <FileName>cparse\objects.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MapData_t" Collapsed="true">
+    <Position X="66" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAEAAAAAAAAABAAAAAAAAAAAAAAAAAAAAwAAAAAAA=</HashCode>
+      <FileName>cparse\objects.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="TokenMap" Collapsed="true">
+    <Position X="5.5" Y="19.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEEAAAABEAABBAAAIAAACAAEAAAAQCAAAEkAAAAI=</HashCode>
+      <FileName>cparse\objects.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="GlobalScope" Collapsed="true">
+    <Position X="5.5" Y="20.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>cparse\objects.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="bad_cast" Collapsed="true">
+    <Position X="5.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>cparse\shunting-yard-exceptions.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="syntax_error" Collapsed="true">
+    <Position X="7.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\shunting-yard-exceptions.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="type_error" Collapsed="true">
+    <Position X="0.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>cparse\shunting-yard-exceptions.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="undefined_operation" Collapsed="true">
+    <Position X="3" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\shunting-yard-exceptions.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="TokenBase" Collapsed="true">
+    <Position X="7.75" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>cparse\shunting-yard.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="TokenNone" Collapsed="true">
+    <Position X="10" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAACAA=</HashCode>
+      <FileName>cparse\shunting-yard.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="rpnBuilder" Collapsed="true">
+    <Position X="62.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAFAEAAAAAAAgAgAAAgBAAAAAiAIIAAEIAAA=</HashCode>
+      <FileName>cparse\shunting-yard.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="evaluationData" Collapsed="true">
+    <Position X="69.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAEAAgAAAQAAAAAAAAAAAIAAEAAAA=</HashCode>
+      <FileName>cparse\shunting-yard.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="RefToken" Collapsed="true">
+    <Position X="12.25" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAIAAAAEAAAAAAAAACAAAAAAEAAAAAA=</HashCode>
+      <FileName>cparse\shunting-yard.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="opSignature_t" Collapsed="true">
+    <Position X="71.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAIAAAAAAAIAAAAgAA=</HashCode>
+      <FileName>cparse\shunting-yard.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="opMap_t" Collapsed="true">
+    <Position X="69.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>cparse\shunting-yard.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="fileHeader" Collapsed="true">
+    <Position X="69.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAEAAAAAACgIAAAAAIAAIAAAAYAAAAEAAACAAAAAAAA=</HashCode>
+      <FileName>dbf\DBFBase.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="fieldDefinition" Collapsed="true">
+    <Position X="67.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAFAAAggAAAAAAAAMAAAAAAAQAAAAAAAAAAAAAI=</HashCode>
+      <FileName>dbf\DBFBase.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::IConfig" Collapsed="true">
+    <Position X="5.5" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAIAAgAEAAEAAAAAAAAAQCAAEAgAASAACACAAgAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::CaseSensitive" Collapsed="true">
+    <Position X="67.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::pluralise" Collapsed="true">
+    <Position X="59" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAIAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::SourceLineInfo" Collapsed="true">
+    <Position X="57.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAQACAAAAAAAABAAgAAACAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::StreamEndStop" Collapsed="true">
+    <Position X="66" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::IGeneratorInfo" Collapsed="true">
+    <Position X="11.5" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAEAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::IGeneratorsForTest" Collapsed="true">
+    <Position X="17.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAgAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::IShared" Collapsed="true">
+    <Position X="10" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::SharedImpl&lt;T&gt;" Collapsed="true">
+    <Position X="28.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAEAAAAAAAAQAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::IResultCapture" Collapsed="true">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::IRunner" Collapsed="true">
+    <Position X="13.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::IContext" Collapsed="true">
+    <Position X="73" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAmAAAAAAAAAAAAACAAEAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::IMutableContext" Collapsed="true">
+    <Position X="14.5" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAACAAAAAAAAAAAABAAAEAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::ITestCase" Collapsed="true">
+    <Position X="10" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::ITestCaseRegistry" Collapsed="true">
+    <Position X="20.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAASAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::NameAndDesc" Collapsed="true">
+    <Position X="73" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAKAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::AutoReg" Collapsed="true">
+    <Position X="62.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::ResultWas" Collapsed="true">
+    <Position X="60.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::ResultDisposition" Collapsed="true">
+    <Position X="59" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::AssertionInfo" Collapsed="true">
+    <Position X="57.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAACAAAAAAAAAAABAAACAAAAABAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::AssertionResultData" Collapsed="true">
+    <Position X="59" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAIAAAAAAAAAAAAAAAAAAADA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::TestFailureException" Collapsed="true">
+    <Position X="62.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::CopyableStream" Collapsed="true">
+    <Position X="57.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAEgAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::StringMaker&lt;T&gt;" Collapsed="true">
+    <Position X="0.5" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::StringMaker&lt;T*&gt;" Collapsed="true">
+    <Position X="69.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::StringMaker&lt;R C::*&gt;" Collapsed="true">
+    <Position X="67.75" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::MessageInfo" Collapsed="true">
+    <Position X="69.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAKAAAQAQAAAAABAAAAAQAgABAAACA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::MessageBuilder" Collapsed="true">
+    <Position X="67.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAgARAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::SectionInfo" Collapsed="true">
+    <Position X="67.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAEAAAAAAAgABAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::SectionEndInfo" Collapsed="true">
+    <Position X="66" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAACAAAAAAAAAAAAAAIAIAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::Counts" Collapsed="true">
+    <Position X="59" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAQQAAAAAGAAACEAgAAAAIAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::Totals" Collapsed="true">
+    <Position X="73" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAQAABAgAEAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::IGenerator&lt;T&gt;" Collapsed="true">
+    <Position X="16.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAIAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::IExceptionTranslatorRegistry" Collapsed="true">
+    <Position X="18.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::IExceptionTranslator" Collapsed="true">
+    <Position X="57.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::IReporterRegistry" Collapsed="true">
+    <Position X="0.5" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBAABAIAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::IReporterFactory" Collapsed="true">
+    <Position X="7.75" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::IRegistryHub" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAgAAAAAAAAAAAAAAAAAEIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::IMutableRegistryHub" Collapsed="true">
+    <Position X="5.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIACAAAAAAQAAAAAAAAAAAAAAAggAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::TagAlias" Collapsed="true">
+    <Position X="57.25" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABABAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::RegistrarForTagAliases" Collapsed="true">
+    <Position X="64.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::ITagAliasRegistry" Collapsed="true">
+    <Position X="15.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAQAAAAAQAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::TestCaseInfo" Collapsed="true">
+    <Position X="14.5" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAISAIAEAAAAAAAAICAAAAAAAAAEAAAAAABAABEAAAE=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::Verbosity" Collapsed="true">
+    <Position X="62.5" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::WarnAbout" Collapsed="true">
+    <Position X="66" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::ShowDurations" Collapsed="true">
+    <Position X="71.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::RunTests" Collapsed="true">
+    <Position X="64.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::UseColour" Collapsed="true">
+    <Position X="60.75" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::IStream" Collapsed="true">
+    <Position X="64.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::ConfigData" Collapsed="true">
+    <Position X="73" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAJAAKAEAAEAAAEAgIAQAAAQCgAMAAIAQEAQACIAwAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::Colour" Collapsed="true">
+    <Position X="69.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAABAAAAAAABAAAABAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::ReporterConfig" Collapsed="true">
+    <Position X="73" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAQAAAAAAAAAACIAAAAAAQAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::ReporterPreferences" Collapsed="true">
+    <Position X="57.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::LazyStat&lt;T&gt;" Collapsed="true">
+    <Position X="11.5" Y="21.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAQAgQAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::TestRunInfo" Collapsed="true">
+    <Position X="66" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAACAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::GroupInfo" Collapsed="true">
+    <Position X="71.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::AssertionStats" Collapsed="true">
+    <Position X="60.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIEACACAEAgAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::SectionStats" Collapsed="true">
+    <Position X="69.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAAAAAAAAQAECAgAAIAIAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::TestCaseStats" Collapsed="true">
+    <Position X="60.75" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAQABAAAgAAQAAAAAAAAAAgAEAgAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::TestGroupStats" Collapsed="true">
+    <Position X="64.25" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAQAAAAAAAAAAAAAAAEAAAAAEQgAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::TestRunStats" Collapsed="true">
+    <Position X="67.75" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAQIAAAAAAAAAAAAAAAAAAAgEAgAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::IStreamingReporter" Collapsed="true">
+    <Position X="12.25" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAgAAAAAAgEAAABAAAAAEAgAAAAAgAAAAAQAAhSIAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::TagInfo" Collapsed="true">
+    <Position X="59" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAABAAAAAAAQAAAAAAAAAAAAACCAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::FatalConditionHandler" Collapsed="true">
+    <Position X="66" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::SignalDefs" Collapsed="true">
+    <Position X="73" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::Version" Collapsed="true">
+    <Position X="64.25" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAABAIAAAAAAEAAAAQAAAAAgAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::RandomNumberGenerator" Collapsed="true">
+    <Position X="62.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQEAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::GeneratorInfo" Collapsed="true">
+    <Position X="11.5" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAIQAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::IReporter" Collapsed="true">
+    <Position X="14.5" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAUAAAARAAAAgAgCUAQAAAAAAAAAAADEAAAgA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::StreamingReporterBase" Collapsed="true">
+    <Position X="37.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::ConsoleReporter" Collapsed="true">
+    <Position X="39" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::CompactReporter" Collapsed="true">
+    <Position X="41.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAEAggAAABAAAAAEAgAAAAAAAAAAAAAAhCAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::Matchers::Impl::Matcher&lt;ExpressionT&gt;" Collapsed="true">
+    <Position X="14.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACBAAAAACAAIAAAAAgEAAAAAI=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::Matchers::Impl::MatcherImpl&lt;DerivedT, ExpressionT&gt;" Collapsed="true">
+    <Position X="14.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::StdString::CasedString" Collapsed="true">
+    <Position X="66" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEBAAAAAAAAAAQAAAAAAAAAAAIAAAAAAAAAAAAEA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::StdString::Equals" Collapsed="true">
+    <Position X="18.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgIAABAAAAEAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::StdString::Contains" Collapsed="true">
+    <Position X="21" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAABAABAAAAAAAAAAAAAAAQAAI=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::StdString::StartsWith" Collapsed="true">
+    <Position X="23.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAABAAAAAAAAAAAIAABAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::StdString::EndsWith" Collapsed="true">
+    <Position X="25.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAABAAAAAIAAAAAAAAAAAAIAAI=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::Internal::OperatorTraits&lt;Op&gt;" Collapsed="true">
+    <Position X="59" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::Internal::OperatorTraits&lt;IsEqualTo&gt;" Collapsed="true">
+    <Position X="60.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::Internal::OperatorTraits&lt;IsNotEqualTo&gt;" Collapsed="true">
+    <Position X="62.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::Internal::OperatorTraits&lt;IsLessThan&gt;" Collapsed="true">
+    <Position X="64.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::Internal::OperatorTraits&lt;IsGreaterThan&gt;" Collapsed="true">
+    <Position X="66" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::Internal::OperatorTraits&lt;IsLessThanOrEqualTo&gt;" Collapsed="true">
+    <Position X="67.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::Internal::OperatorTraits&lt;IsGreaterThanOrEqualTo&gt;" Collapsed="true">
+    <Position X="57.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::Internal::Evaluator&lt;T1, T2, IsEqualTo&gt;" Collapsed="true">
+    <Position X="57.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::Internal::Evaluator&lt;T1, T2, IsNotEqualTo&gt;" Collapsed="true">
+    <Position X="71.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::Internal::Evaluator&lt;T1, T2, IsLessThan&gt;" Collapsed="true">
+    <Position X="62.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::Internal::Evaluator&lt;T1, T2, IsGreaterThan&gt;" Collapsed="true">
+    <Position X="60.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::Internal::Evaluator&lt;T1, T2, IsGreaterThanOrEqualTo&gt;" Collapsed="true">
+    <Position X="59" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::Internal::Evaluator&lt;T1, T2, IsLessThanOrEqualTo&gt;" Collapsed="true">
+    <Position X="73" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::Detail::BorgType" Collapsed="true">
+    <Position X="64.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::Detail::TrueType" Collapsed="true">
+    <Position X="57.25" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::Detail::FalseType" Collapsed="true">
+    <Position X="64.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::Detail::IsStreamInsertable&lt;T&gt;" Collapsed="true">
+    <Position X="62.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIQAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::Detail::EnumStringMaker&lt;T, IsEnum&gt;" Collapsed="true">
+    <Position X="66" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::Detail::EnumStringMaker&lt;T, true&gt;" Collapsed="true">
+    <Position X="67.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::Detail::StringMakerBase&lt;C&gt;" Collapsed="true">
+    <Position X="0.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::Detail::StringMakerBase&lt;true&gt;" Collapsed="true">
+    <Position X="71.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::TupleDetail::ElementPrinter&lt;Tuple, N, &gt;" Collapsed="true">
+    <Position X="60.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::TupleDetail::ElementPrinter&lt;Tuple, N, false&gt;" Collapsed="true">
+    <Position X="62.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::Matchers::Impl::NSStringMatchers::StringHolder&lt;MatcherT&gt;" Collapsed="true">
+    <Position X="8.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::Matchers::Impl::NSStringMatchers::Equals" Collapsed="true">
+    <Position X="5.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAABAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::Matchers::Impl::NSStringMatchers::Contains" Collapsed="true">
+    <Position X="7.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAQAAI=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::Matchers::Impl::NSStringMatchers::StartsWith" Collapsed="true">
+    <Position X="9.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::Matchers::Impl::NSStringMatchers::EndsWith" Collapsed="true">
+    <Position X="12" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAIAAI=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="STITCH_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::TextAttributes" Collapsed="true">
+    <Position X="69.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABFBAAAAAAACARAAAAAAEAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Clara::UnpositionalTag" Collapsed="true">
+    <Position X="59" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Clara::CommonArgProperties&lt;ConfigT&gt;" Collapsed="true">
+    <Position X="71.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAEAAAAAAAAIAAAACAAQAAAAAAAAAAIAEAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Clara::OptionArgProperties" Collapsed="true">
+    <Position X="73" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAABAAAAAAAIAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Clara::PositionalArgProperties" Collapsed="true">
+    <Position X="60.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAIAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Clara::Detail::RemoveConstRef&lt;T&gt;" Collapsed="true">
+    <Position X="69.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Clara::Detail::RemoveConstRef&lt;T&amp;&gt;" Collapsed="true">
+    <Position X="67.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Clara::Detail::RemoveConstRef&lt;T const&amp;&gt;" Collapsed="true">
+    <Position X="66" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Clara::Detail::RemoveConstRef&lt;T const&gt;" Collapsed="true">
+    <Position X="71.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Clara::Detail::IsBool&lt;T&gt;" Collapsed="true">
+    <Position X="59" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Clara::Detail::IsBool&lt;bool&gt;" Collapsed="true">
+    <Position X="60.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Clara::Detail::IArgFunction&lt;ConfigT&gt;" Collapsed="true">
+    <Position X="6.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAQAAAAARAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Clara::Detail::NullBinder&lt;C&gt;" Collapsed="true">
+    <Position X="1" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAQAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Clara::Detail::BoundDataMember&lt;C, M&gt;" Collapsed="true">
+    <Position X="3.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAQAAAAAQAAAAAAACAAAEAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Clara::Detail::BoundUnaryMethod&lt;C, M&gt;" Collapsed="true">
+    <Position X="5.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAQAAAAAQAAAAAAACAAAEAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Clara::Detail::BoundNullaryMethod&lt;C&gt;" Collapsed="true">
+    <Position X="7.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAQAAAAAQAAAAAAACAAAEAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Clara::Detail::BoundUnaryFunction&lt;C&gt;" Collapsed="true">
+    <Position X="10" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAgQAAAAAQAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Clara::Detail::BoundBinaryFunction&lt;C, T&gt;" Collapsed="true">
+    <Position X="12.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAgQAAAAAQAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="CLICHE_TBC_TEXT_FORMAT_OUTER_NAMESPACE::Tbc::TextAttributes" Collapsed="true">
+    <Position X="71.25" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABFBAAAAAAACARAAAAAAEAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::TestCaseTracking::ITracker" Collapsed="true">
+    <Position X="53.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgARAAJAAAAAAAAAMAAIAAIAQCCEEACA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::`anonymous-namespace'::IColourImpl" Collapsed="true">
+    <Position X="18" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::`anonymous-namespace'::NoColourImpl" Collapsed="true">
+    <Position X="15.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Catch::Detail::`anonymous-namespace'::Endianness" Collapsed="true">
+    <Position X="64.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="Catch::TestFunction" Collapsed="true">
+    <Position X="67.75" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="uint64_t" Collapsed="true">
+    <Position X="18.5" Y="23.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>c:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdint.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="Catch::exceptionTranslateFunction" Collapsed="true">
+    <Position X="59" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="Catch::ExceptionTranslators" Collapsed="true">
+    <Position X="60.75" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="args_t" Collapsed="true">
+    <Position X="57.25" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\functions.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="TokenMap_t" Collapsed="true">
+    <Position X="71.25" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\objects.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="TokenList_t" Collapsed="true">
+    <Position X="69.5" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\objects.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="tokType_t" Collapsed="true">
+    <Position X="57.25" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\shunting-yard.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="opID_t" Collapsed="true">
+    <Position X="18.5" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\shunting-yard.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="TokenQueue_t" Collapsed="true">
+    <Position X="73" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\shunting-yard.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="rWordParser_t" Collapsed="true">
+    <Position X="66" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\shunting-yard.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="rWordMap_t" Collapsed="true">
+    <Position X="64.25" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\shunting-yard.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="typeMap_t" Collapsed="true">
+    <Position X="59" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\shunting-yard.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="opList_t" Collapsed="true">
+    <Position X="62.5" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cparse\shunting-yard.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="uint8" Collapsed="true">
+    <Position X="64.25" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>dbf\DBFBase.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="uint16" Collapsed="true">
+    <Position X="60.75" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>dbf\DBFBase.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="uint32" Collapsed="true">
+    <Position X="62.5" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>dbf\DBFBase.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Enum Name="tokType" Collapsed="true">
+    <Position X="59" Y="16" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAhAAAAAAAIAAAQAAAIAAiAgIAAEAQAAIAAAAIIg=</HashCode>
+      <FileName>cparse\shunting-yard.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Catch::Internal::Operator" Collapsed="true">
+    <Position X="57.25" Y="16" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAQAAAgAAACIABAAAAA=</HashCode>
+      <FileName>cparse\catch.hpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>
