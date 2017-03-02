@@ -29,20 +29,24 @@ insert into stu values (3, 'tom', 'M', 101.0, '1996-10-11');
 ###Select   
 
 单条件,多条件,聚合函数,嵌套查询,对查询结果排序   
+
 示例1多条件查询:
 ```
 select id, name from stu where id>=2&&id<=5
 ```   
+
 示例2嵌套查询:
 ```
 select ID, Firstname from
 (select ID, Firstname from
 test where date=='2016-10-10') where id==1;
 ```   
+
 示例3聚合函数:   
 ```
 select max(weight), sex from stu group by sex having max(weight)>=100;
 ```   
+
 示例4排序:
 ```
 select ave(weight), birtyday from stu group by birtyday order by weight;
