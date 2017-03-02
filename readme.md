@@ -47,7 +47,8 @@ test where date=='2016-10-10') where id==1;
 select max(weight), sex from stu group by sex having max(weight)>=100;
 ```   
 
-示例4排序:
+示例4排序:   
+
 ```
 select ave(weight), birtyday from stu group by birtyday order by weight;
 ```
