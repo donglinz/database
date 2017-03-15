@@ -9,6 +9,7 @@ Complier:MSVC++11.0 或更高,必需在64位环境下进行编译
 多字段,多数据类型。   
 支持int, varchar, char, date, double数据类型   
 示例:   
+
 ```
 create table stu (
 id int,
@@ -20,7 +21,8 @@ birtyday date
 ```
 <h3>Insert</h3>   
 支持单记录,多记录insert   
-示例:
+示例:   
+
 ```
 insert into stu values (1, 'zhangsan', 'M', 90.0, '1996-10-10');
 insert into stu values (2, 'lisi', 'M', 100.1, '1996-10-10');
