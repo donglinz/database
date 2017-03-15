@@ -1,11 +1,11 @@
-#C++ 实现关系型数据库   
+<h1>C++ 实现关系型数据库</h1> 
 基于 C++11从底层实现了DBMS的部分功能,底层存储结构位0x3f版本的dbf文件。   
-#编译   
+<h1>编译</h1>
 IDE:Visual Studio 2015及以上   
 OS:win10   
 Complier:MSVC++11.0 或更高,必需在64位环境下进行编译   
-#查询语句   
-###Create   
+<h1>查询语句</h1>   
+<h3>Create</h3>   
 多字段,多数据类型。   
 支持int, varchar, char, date, double数据类型   
 示例:   
@@ -18,7 +18,7 @@ weight double,
 birtyday date
 );
 ```
-###Insert   
+<h3>Insert</h3>   
 支持单记录,多记录insert   
 示例:
 ```
@@ -26,7 +26,7 @@ insert into stu values (1, 'zhangsan', 'M', 90.0, '1996-10-10');
 insert into stu values (2, 'lisi', 'M', 100.1, '1996-10-10');
 insert into stu values (3, 'tom', 'M', 101.0, '1996-10-11');
 ```
-###Select   
+<h3>Select</h3>   
 
 单条件,多条件,聚合函数,嵌套查询,对查询结果排序   
 
