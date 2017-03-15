@@ -45,7 +45,7 @@ test where date=='2016-10-10') where id==1;
 示例3聚合函数:   
 ```
 select max(weight), sex from stu group by sex having max(weight)>=100;
-```   
+```
 
 示例4排序:   
 
